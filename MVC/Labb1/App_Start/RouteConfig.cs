@@ -14,10 +14,26 @@ namespace Labb1
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+             name: "B2B",
+             url: "Sell/{action}/{id}",
+             defaults: new { controller = "Sell", action = "B2B", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+             name: "SuperMario",
+             url: "Life/{action}/{id}",
+             defaults: new { controller = "Life", action = "SuperMario", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+             name: "Sabel",
+             url: "Laser/{action}/{id}",
+             defaults: new { controller = "Laser", action = "Sabel", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+      
         }
     }
 }
