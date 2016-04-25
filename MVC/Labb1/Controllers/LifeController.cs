@@ -17,8 +17,17 @@ namespace Labb1.Controllers
         {
             return View();
         }
-        public ActionResult Live()
+        public ActionResult Live(int? id)
         {
+            if (id != null)
+            {
+                ViewBag.Quantity = id;
+
+            }
+            else
+            {
+                ViewBag.Quantity = "None";
+            }
             return View();
         }
     }
