@@ -13,7 +13,8 @@ namespace Labb2_upg2.Models
 
             public int XCordinate { get; set; }
             public int YCordinate { get; set; }
+            public bool DisableButton { get; set; }
 
-        
+
     }
 }
