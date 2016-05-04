@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "ContosoBooks_Lab3"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-ContosoBooks_Lab3-74c43bc2-3d4d-4ebd-ae81-1224c5b5ce06;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}

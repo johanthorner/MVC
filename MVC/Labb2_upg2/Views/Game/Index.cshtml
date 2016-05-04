@@ -1,0 +1,29 @@
+﻿@using System.Net.Mime
+@using Labb2_upg2.Controllers
+@using Labb2_upg2.Models
+@model Labb2_upg2.Models.GameModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+
+    @for (int i = 0; i <= Tiles.TileCordinates.Count-1; i += 3)
+    {
+        <tr>
+            @for (int y = i; y < i + 3; y++)
+                {
+                    <td>
+                        <input type="submit" name="@Tiles.TileCordinates[y].ID" value="@Tiles.TileCordinates[y].sign"/>
+                        @Tiles.TileCordinates[y].sign
+                    </td>
+            }
+        </tr>
+
+    }
+</table>
+
+
+
