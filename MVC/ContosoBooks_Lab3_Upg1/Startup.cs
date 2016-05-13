@@ -99,6 +99,7 @@ namespace ContosoBooks_Lab3_Upg1
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            SampleData.Initialize(app.ApplicationServices);
         }
 
         // Entry point for the application.

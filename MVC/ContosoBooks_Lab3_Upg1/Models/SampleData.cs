@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Data.Entity;
 namespace ContosoBooks_Lab3_Upg1.Models
 {
     public class SampleData
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
-            var context = serviceProvider.GetServiceProvider<ApplicationDbContext>();
+            var context = serviceProvider.GetService<ApplicationDbContext>();
             context.Database.Migrate();
             if (!context.Book.Any())
             {
