@@ -1,0 +1,28 @@
+﻿@using Labb2_upg2.Models
+@using Labb2_upg2.Controllers
+@using Labb2_upg2.Models
+@{
+    ViewBag.Title = "Play";
+}
+<h2>Play</h2>
+@{
+    if (IsPost)
+    {
+    }
+    <form action="" method="POST">
+        <p>Curent Number is: @TjugoEttModels.CurrentNumber</p>
+        <p>
+            <input type="radio" id="radio1" name="choice" value="1" />
+            <label>1</label>
+        </p>
+        <p>
+            <input type="radio" id="radio2" name="choice" value="2" />
+            <label>2</label>
+        </p>
+        <p>
+            <input type="submit" value="choose" />
+        </p>
+        <H3>@ViewBag.result</H3>
+    </form>
+
+}
