@@ -135,7 +135,7 @@ namespace MvcMovie_Lab3_upg2.Controllers
 
             return View(movie);
         }
-
+        //Klar
         // POST: Movies/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
