@@ -22,10 +22,20 @@ namespace Labb2_upg2.Controllers
         [HttpPost]
         public ActionResult Play(string buttonValue)
         {
-            int choise = int.Parse(Request["choice"]);
-            TjugoEttModels.CurrentNumber += choise;
-            ViewBag.result = TjugoEttModels.HandleGameResults();
+            try
+            {
+                int choise = int.Parse(Request["choice"]);
+                TjugoEttModels.CurrentNumber += choise;
+                ViewBag.result = TjugoEttModels.HandleGameResults();
+            }
+            catch (Exception)
+            {
+                ViewBag.result = "Choose a value!";
+              
+            }
             return View();
+           
+            
         }
     }
 }
