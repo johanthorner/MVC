@@ -107,7 +107,7 @@ namespace MvcMovie_Lab3_upg2.Controllers
         // POST: Movies/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit( [Bind("ID,Title,ReleaseDate,Genre,Price")]Movie movie)
+        public IActionResult Edit( [Bind("ID,Title,ReleaseDate,Genre,Price,Rating")]Movie movie)
         {
             if (ModelState.IsValid)
             {
