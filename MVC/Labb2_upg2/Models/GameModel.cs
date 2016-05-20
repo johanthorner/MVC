@@ -99,8 +99,15 @@ namespace Labb2_upg2.Models
         {
             if (Tiles.TileCordinates[4].sign == '5')
                 return 5;
-            return RandomFreeSquare();
+            //return DefensivePlay();
+             return RandomFreeSquare();
         }
+
+        private static int DefensivePlay()
+        {
+            return 9;
+        }
+
         public static void ChangeCordiante(int id, char sign)
         {
             for (int i = 0; i < Tiles.TileCordinates.Count; i++)

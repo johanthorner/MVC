@@ -1,0 +1,40 @@
+﻿@model Labb4_Upg2.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr/>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+</div>
+
+@Ajax.ActionLink(linkText:"Click here to add grades",
+    actionName:"GetGradesCreate",
+    routeValues: new {id = @Model.ID},
+    ajaxOptions: new AjaxOptions
+    {
+        UpdateTargetId = "gradesDiv",
+        InsertionMode = InsertionMode.Replace
+    })
+@Ajax.ActionLink(linkText: "Click here to see list of grades",
+    actionName: "SeeListOfGrades",
+    routeValues: new { id = @Model.ID },
+    ajaxOptions: new AjaxOptions
+    {
+        UpdateTargetId = "gradesDiv",
+        InsertionMode = InsertionMode.Replace
+    })
+<div id="gradesDiv"></div>
