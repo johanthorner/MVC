@@ -15,6 +15,8 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "MvcMovie_Lab3_upg2", "MvcMo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb4_Upg2_v2", "Labb4_Upg2_v2\Labb4_Upg2_v2.csproj", "{4914169B-9FF3-434F-B04E-453B9CB40DAC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labb4_Upg1", "Labb4_Upg1\Labb4_Upg1.csproj", "{46ACA63D-B0A5-4AE5-9D02-3B6692211053}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{4914169B-9FF3-434F-B04E-453B9CB40DAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4914169B-9FF3-434F-B04E-453B9CB40DAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4914169B-9FF3-434F-B04E-453B9CB40DAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46ACA63D-B0A5-4AE5-9D02-3B6692211053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46ACA63D-B0A5-4AE5-9D02-3B6692211053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46ACA63D-B0A5-4AE5-9D02-3B6692211053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46ACA63D-B0A5-4AE5-9D02-3B6692211053}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

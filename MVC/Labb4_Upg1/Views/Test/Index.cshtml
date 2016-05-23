@@ -1,0 +1,18 @@
+﻿
+@Ajax.ActionLink(linkText: "1",
+                    actionName: "one",
+                    ajaxOptions: new AjaxOptions
+                    {
+                        UpdateTargetId = "ajaxtarget",
+                        InsertionMode = InsertionMode.InsertAfter
+                    })
+
+@Ajax.ActionLink(linkText: "2",
+                    actionName: "two",
+                    ajaxOptions: new AjaxOptions
+                    {
+                        UpdateTargetId = "ajaxtarget",
+                        InsertionMode = InsertionMode.InsertAfter
+                    })
+
+<div id="ajaxtarget"></div>

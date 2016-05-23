@@ -1,0 +1,42 @@
+﻿@using System.Activities.Expressions
+@using Labb4_Upg1.Models
+@using Labb4_Upg1.Controllers
+@{
+    ViewBag.Title = "Play";
+}
+<h2>Play</h2>
+
+@{ 
+    <form>
+
+        <div id="result">Curent Number is: @TjugoEttModels.CurrentNumber</div>
+
+        @{ AjaxOptions ajaxOption = new AjaxOptions
+            {
+                UpdateTargetId = "result",
+                InsertionMode = InsertionMode.Replace
+            };
+        }
+        <p>
+            @Ajax.ActionLink(
+                linkText: "1",
+                actionName: "NextTurn",
+                routeValues: new { buttonValue = 1 },
+                ajaxOptions: ajaxOption
+            )
+        </p>
+        <p>
+            @Ajax.ActionLink(
+                linkText: "2",
+                actionName: "NextTurn",
+                routeValues: new { buttonValue = 2 },
+                ajaxOptions: ajaxOption
+            )
+        </p>
+        <H3><label id="ResultMessage"></label></H3>
+    </form>
+    
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
